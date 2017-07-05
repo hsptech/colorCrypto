@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>crypto</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="canvas.js"></script>
+</head>
+<style>
+	#colorSchema{
+		margin-top: 30px;
+	}
+</style>
+<body>
+	<header style="text-align:center">
+		<h2>Welcome To Crypto</h2>
+	</header>
+	<div>
+		<h3>Enter your message</h3>
+		<div class="inputFields">
+			<input type="text" id="textInput">
+			<input type="button" value="submit" id="textSubmit">
+		</div>
+		<canvas id="colorSchema" width="300px" height="300px"></canvas> 
+	</div>
+	<div>
+		<span>Paste the key to decrypt your greyScale image</span>
+		<input type="text" id="key" disabled="disabled">
+		<span>This feature is available soon(auto generated version)</span>
+	</div>
+	<div>
+		Upload the encrypted image here
+		<input type="file" id="file">
+	</div>
+	<input type="button" value="decrypt" id="decrypt">
+	<div>
+		<canvas id="hiddenImage" width="300px" height="300px"></canvas> 
+	</div>
+</body>
+</html>
